@@ -1,0 +1,16 @@
+{
+  "name": "url_shortner_again",
+  "version": "1.0.0",
+  "description": "This time building again without seeing and maybe few new features",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Dhanush",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.6.2",
+    "nanoid": "^5.1.11"
+  }
+}
