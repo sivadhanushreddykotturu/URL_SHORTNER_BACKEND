@@ -61,8 +61,58 @@ async function analyticsURL(req,res){
     )
 }
 
+async function introductionToApplication(req,res){
+    res.send(
+        `<html>
+        <head>
+        <style>
+        body{
+        font-family: -apple-system,BlinkMacSystemFont, sans-serif;
+        padding:20px;
+        max-width:600px;
+        margin: 0 auto;
+        }
+        </style>
+        </head>
+        <body>
+        <h1>URL SHORTNER API<h1>
+        <p>Docs for how to use api routes</p>
+
+        <ul>
+        <li>POST / -> Create Short URL</li>
+        <pre>
+    {
+    "url":"https://timetablekl.vercel.app"
+    }
+    </pre>
+    <pre>
+    {
+    "id": "b20cKxbr"
+    }
+    </pre>
+        <li>GET /analytics/:shortId -> Get Analytics Of URL</li>
+        <pre>
+{
+    "totalclicks": 1,
+    "analytics": [
+       {
+            "timestamp": 1779789623809,
+            "_id": "6a156f370acc13baa0abdb3a"
+        }
+    ]
+}
+</pre>
+    <li>GET /:shortId -> Redirects To Original URL,If not available or link expired,throws appropirate error</li>
+        </ul>
+        </body>
+        </html>
+        `
+    )
+}
+
 module.exports = {
     generateShortId, 
 redirectURL,
 analyticsURL,
+introductionToApplication,
 };
