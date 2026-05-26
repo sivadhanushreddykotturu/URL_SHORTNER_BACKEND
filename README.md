@@ -31,7 +31,7 @@ You can test these routes using tools like **Postman**, **Hoppscotch**, or `curl
 * **Request Body (Raw JSON):**
     ```json
     {
-      "url": "[https://timetablekl.vercel.app](https://timetablekl.vercel.app)"
+      "url": "https://timetablekl.vercel.app"
     }
     ```
 * **Response (201 Created):**
