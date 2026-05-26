@@ -4,7 +4,7 @@ const router = express.Router();
 
 
 router.post("/",generateShortId);
-router.get("/:shortId",redirectURL);
 router.get("/analytics/:shortId",analyticsURL);
+router.get("/:shortId",redirectURL);
 
 module.exports = router
