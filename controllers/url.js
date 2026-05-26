@@ -40,13 +40,13 @@ async function redirectURL(req,res){
         {returnDocument:'after'}
     );
     if(entry){
-        res.redirect(entry.redirectURL)
+        return res.redirect(entry.redirectURL)
     }
     const link = await URL.findOne({shortId});
     if(!link){
-        res.status(404).json({error:'Short URL not found'});
+        return res.status(404).json({error:'Short URL not found'});
     }else{
-        res.status(410).json({error:"Short URL is expired"});
+        return res.status(410).json({error:"Short URL is expired"});
     }
 }
 
