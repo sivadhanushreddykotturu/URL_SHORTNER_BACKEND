@@ -17,6 +17,51 @@ A lightweight, robust backend API built with Node.js, Express, and MongoDB to ge
 
 ---
 
+## 🚀 Local Setup Instructions
+
+Follow these steps to run the project locally on your machine:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/sivadhanushreddykotturu/URL_SHORTNER_BACKEND.git
+cd URL_SHORTNER_BACKEND
+```
+
+---
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+### 3. Configure Environment Variables
+
+Create a `.env` file in the root directory and add your MongoDB connection string:
+
+```env
+MONGODB_URI=mongodb://localhost:27017/url-project_again
+```
+
+> Make sure your local MongoDB server is running before starting the application.
+
+---
+
+### 4. Start the Server
+
+```bash
+npm run test
+```
+
+The API should now be running locally at:
+
+```txt
+http://localhost:8098 (keep your own port number as you wish)
+```
+
 ## 🛠️ API Reference & Routing
 
 You can test these routes using tools like **Postman**, **Hoppscotch**, or `curl`.
