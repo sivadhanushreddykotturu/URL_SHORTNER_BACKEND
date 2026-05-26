@@ -87,7 +87,7 @@ async function introductionToApplication(req,res){
     </pre>
     <pre>
     {
-    "id": "b20cKxbr"
+    "id": "2vCV9OtQ"
     }
     </pre>
         <li>GET /analytics/:shortId -> Get Analytics Of URL</li>
