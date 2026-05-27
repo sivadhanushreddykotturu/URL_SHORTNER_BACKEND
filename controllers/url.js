@@ -3,6 +3,7 @@ const URL = require("../models/url");
 
 async function generateShortId(req,res){
     const shortID=nanoid(8);
+    console.log(req.body);
     const body = req.body;
     if(!body.url){
         return res.status(400).json({
@@ -52,7 +53,12 @@ async function redirectURL(req,res){
 
 async function analyticsURL(req,res){
     const shortId = req.params.shortId;
-    const entry = await URL.findOne({shortId},)
+    const entry = await URL.findOne({shortId})
+    if(!entry){
+        return res.status(404).json({
+            error:"short url not found"
+        })
+    }
     res.json(
         {
             totalclicks:entry.visitHistory.length,

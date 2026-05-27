@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>URL Shortener</h1> 
+  <p class="subtitle">Paste a URL to shorten, or enter a shortcode for analytics</p>
+
+  <div class="input-row">
+    <input type="text" id="urlInput" placeholder="https://example.com or 8-char shortcode" />
+  </div>
+  <div class="btn-row">
+    <button class="btn-primary" onclick="shortenUrl()">Shorten</button>
+    <button class="btn-secondary" onclick="getAnalytics()">Analytics</button>
+  </div>
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
